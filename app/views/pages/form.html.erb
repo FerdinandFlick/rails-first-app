@@ -1,0 +1,24 @@
+<h3>The form</h3>
+
+<form action="/contact" method="get">
+  <input type="text" name="member" placeholder="Who are you looking for?">
+  <input type="submit">
+</form>
+
+<br>
+<br>
+<br>
+<br>
+
+<input type="text"
+  name="member"
+  value="<%= params[:member] %>"
+  placeholder="Who are you looking for?">
+<br>
+<br>
+<br>
+<br>
+
+<%= link_to "Know more about us", about_path %>
+<%= link_to "Come home", home_path %>
+<%= link_to "Check our contacts", contact_path %>

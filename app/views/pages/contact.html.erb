@@ -1,0 +1,17 @@
+<h1>Contact</h1>
+<ul>
+  <li>Ferdinand Flick</li>
+  <li>19</li>
+  <li>Munich</li>
+</ul>
+
+<h2>Meet our team</h2>
+<ol>
+  <% @members.each do |member| %>
+    <li><%= member.capitalize %></li>
+  <% end %>
+</ol>
+
+<%= link_to "Know more about us", about_path %>
+<%= link_to "Come home", home_path %>
+<%= link_to "Enter infos in our form", form_path %>
